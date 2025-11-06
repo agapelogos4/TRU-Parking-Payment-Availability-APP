@@ -13,12 +13,14 @@
         android:theme="@style/Theme.COMP3520FinalProject"
         tools:targetApi="31">
         <activity
+            android:name=".PassSelection"
+            android:exported="false" />
+        <activity
             android:name=".PaymentScreen"
             android:exported="false" />
         <activity
             android:name=".LoginSignUpScreen"
             android:exported="false" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
