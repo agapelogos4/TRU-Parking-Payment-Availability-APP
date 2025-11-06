@@ -1,10 +1,10 @@
-package org.example;
+package finalproject.comp3520.truparking.security;
 
 /**
  * This class creates some encryption methods for the Parking App
  */
 
-public class ParkingEncryption
+public class EncryptionCipher
 {
     // This is the fixed shift amount for simplicity instead of choosing the shift each time
     private static final int SHIFT = 5;

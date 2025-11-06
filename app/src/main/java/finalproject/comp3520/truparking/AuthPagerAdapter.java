@@ -1,4 +1,4 @@
-package com.example.comp3520finalproject;
+package finalproject.comp3520.truparking;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -14,8 +14,8 @@ public class AuthPagerAdapter extends FragmentStateAdapter {
 
     public Fragment createFragment(int position)
     {
-        if (position == 0) return new fragment_login();
-        else return new fragment_signup();
+        if (position == 0) return new LoginFragment();
+        else return new SignupFragment();
     }
 
     public int getItemCount()
