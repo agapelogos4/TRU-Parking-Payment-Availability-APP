@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         lotNButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ParkingPaymentActivity.class);
+                Intent intent = new Intent(MainActivity.this, PaymentScreen.class);
                 startActivity(intent);
             }
         });
