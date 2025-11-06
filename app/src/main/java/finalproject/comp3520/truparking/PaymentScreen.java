@@ -1,4 +1,4 @@
-package com.example.comp3520finalproject;
+package finalproject.comp3520.truparking;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
