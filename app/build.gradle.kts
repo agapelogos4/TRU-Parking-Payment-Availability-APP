@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.comp3520finalproject"
+    namespace = "finalproject.comp3520.truparking"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.comp3520finalproject"
+        applicationId = "finalproject.comp3520.truparking"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -26,8 +26,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 }
 
@@ -37,6 +37,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.play.services.maps)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
