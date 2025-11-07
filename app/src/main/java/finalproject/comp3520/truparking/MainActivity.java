@@ -22,8 +22,10 @@ public class MainActivity extends AppCompatActivity {
         lotNButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PassSelectionBottomSheet sheet = new PassSelectionBottomSheet();
-                sheet.show(getSupportFragmentManager(), "PassSelectionBottomSheet");
+                Intent intent = new Intent (MainActivity.this, PaymentScreen.class);
+                startActivity(intent);
+                /*PassSelectionBottomSheet sheet = new PassSelectionBottomSheet();
+                sheet.show(getSupportFragmentManager(), "PassSelectionBottomSheet");*/
             }
         });
 

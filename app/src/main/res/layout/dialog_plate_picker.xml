@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/rounded_plate_mask">
+
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_plate_mask"
+        android:clipToOutline="true">
+
+
+        <ImageView
+            android:id="@+id/licensePlateImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/blank_license_plate"
+            android:scaleType="fitXY" />
+
+
+        <NumberPicker
+            android:id="@+id/platePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:theme="@style/PlateNumberPickerStyle"
+            android:layout_marginTop="8dp" />
+    </FrameLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        app:iconTint="@android:color/white"
+        app:iconPadding="8dp"
+        app:iconGravity="textStart"
+        app:backgroundTint="#000000"
+        app:cornerRadius="12dp" />
+
+</LinearLayout>
+

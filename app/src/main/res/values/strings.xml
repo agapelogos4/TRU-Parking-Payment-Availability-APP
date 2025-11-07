@@ -11,6 +11,13 @@
         <item>120 min</item>
     </string-array>
 
+    <string-array name="License_Plate_Choices_Array">
+        <item>JP9 63T</item>
+        <item>XP3 25E</item>
+        <item>KJ8 91L</item>
+        <item>MD4 31F</item>
+    </string-array>
+
     <!-- Header -->
     <string name="welcome">Welcome</string>
     <string name="welcome_subtitle">Sign in to your account or create a new one</string>

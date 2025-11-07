@@ -11,7 +11,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="397dp"
-        android:layout_height="118dp"
+        android:layout_height="143dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/bg_selected_space_rounded"
         android:orientation="horizontal"
@@ -47,6 +47,15 @@
                 android:layout_marginTop="10dp"
                 android:text="Duration:" />
 
+            <TextView
+                android:id="@+id/licensePlateText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="License Plate: " />
+
+
+
 
         </LinearLayout>
 
@@ -72,11 +81,20 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/spinner_text_background"
-
                 android:spinnerMode="dropdown"
                 android:textAlignment="center" />
 
+            <Spinner
+                android:id="@+id/licensePlateSpinner"
+                android:layout_width="122dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner_text_background"
+                android:spinnerMode="dialog"/>
         </LinearLayout>
+
+
     </LinearLayout>
 
     <LinearLayout
@@ -288,15 +306,13 @@
                 android:text="Pay"
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="50dp"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 app:icon="@drawable/google_icon_logo_svgrepo_com"
                 app:iconPadding="3dp"
                 app:iconSize="15dp"
                 app:iconGravity="textStart"
                 app:iconTint="@null"
-                app:backgroundTint="#FFFFFF"
-                app:strokeColor="@color/black"
-                app:strokeWidth="1dp"
+                app:backgroundTint="#000000"
                 app:cornerRadius="12dp" />
 
             <com.google.android.material.button.MaterialButton
@@ -312,9 +328,7 @@
                 app:iconSize="25dp"
                 app:iconGravity="textEnd"
                 app:iconTint="@null"
-                app:backgroundTint="#FFFFFF"
-                app:strokeColor="@color/black"
-                app:strokeWidth="1dp"
+                app:backgroundTint="#000000"
                 app:cornerRadius="12dp" />
 
 
