@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.RadioButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -32,6 +34,43 @@ public class PassSelectionBottomSheet extends BottomSheetDialogFragment
         }
     }
 
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
+    {
+        super.onViewCreated(view, savedInstanceState);
+
+        RadioButton dayPassRadioButton = view.findViewById(R.id.dayPassRadioButton);
+        RadioButton multidayPassRadioButton = view.findViewById(R.id.multiDayPassRadioButton);
+        LinearLayout dayPassCard = view.findViewById(R.id.DayPassCard);
+        LinearLayout multiDayPassCard = view.findViewById(R.id.MultiDayPassCard);
+
+        dayPassCard.setOnClickListener( v -> {
+            dayPassCard.setSelected(true);
+            multiDayPassCard.setSelected(false);
+            dayPassRadioButton.setChecked(true);
+            multidayPassRadioButton.setChecked(false);
+        });
+
+        multiDayPassCard.setOnClickListener(v -> {
+            dayPassCard.setSelected(false);
+            multiDayPassCard.setSelected(true);
+            dayPassRadioButton.setChecked(false);
+            multidayPassRadioButton.setChecked(true);
+        });
+
+        dayPassRadioButton.setOnClickListener(v -> {
+            dayPassCard.setSelected(true);
+            multiDayPassCard.setSelected(false);
+            dayPassRadioButton.setChecked(true);
+            multidayPassRadioButton.setChecked(false);
+        });
+
+        multidayPassRadioButton.setOnClickListener(v -> {
+            dayPassCard.setSelected(false);
+            multiDayPassCard.setSelected(true);
+            dayPassRadioButton.setChecked(false);
+            multidayPassRadioButton.setChecked(true);
+        });
+    }
 
     @Override
     public int getTheme()

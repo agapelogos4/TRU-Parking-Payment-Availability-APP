@@ -23,7 +23,7 @@ public class PassSelection extends AppCompatActivity {
             return insets;
         });
 
-        RadioButton dayPassRadioButton = findViewById(R.id.dayPassRadioButton);
+        /*RadioButton dayPassRadioButton = findViewById(R.id.dayPassRadioButton);
         RadioButton multidayPassRadioButton = findViewById(R.id.multiDayPassRadioButton);
         LinearLayout dayPassCard = findViewById(R.id.DayPassCard);
         LinearLayout multiDayPassCard = findViewById(R.id.MultiDayPassCard);
@@ -42,7 +42,18 @@ public class PassSelection extends AppCompatActivity {
             multidayPassRadioButton.setChecked(true);
         });
 
-        dayPassRadioButton.setOnClickListener(v -> {multidayPassRadioButton.setChecked(false);});
-        multidayPassRadioButton.setOnClickListener(v -> {dayPassRadioButton.setChecked(false);});
+        dayPassRadioButton.setOnClickListener(v -> {
+            dayPassCard.setSelected(true);
+            multiDayPassCard.setSelected(false);
+            dayPassRadioButton.setChecked(true);
+            multidayPassRadioButton.setChecked(false);
+        });
+
+        multidayPassRadioButton.setOnClickListener(v -> {
+            dayPassCard.setSelected(false);
+            multiDayPassCard.setSelected(true);
+            dayPassRadioButton.setChecked(false);
+            multidayPassRadioButton.setChecked(true);
+        });*/
     }
 }
