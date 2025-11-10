@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="SettingsTitle">Paramètres</string>
+    <string name="AccountButtonTitle">Informations du compte</string>
+    <string name="NotificationsButtonTitle">Notifications / Alertes</string>
+    <string name="TransactionHistoryButtonTitle">Historique des transactions</string>
+    <string name="VehicleManagementButtonTitle">Gestion des véhicules</string>
+    <string name="PassManagementButtonTitle">Gestion des passes</string>
+    <string name="LightAndDarkModeButtonTitle">Mode clair / sombre</string>
+    <string name="LanguageButtonTitle">Langue</string>
+    <string name="ErrorText">Erreur</string>
+    <string name="LanguageText">Langue: %s</string>
+
+</resources>

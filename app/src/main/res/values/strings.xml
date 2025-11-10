@@ -1,4 +1,5 @@
 <resources>
+    <string name="old_app_name">TRU Parking Payment &amp; Availability APP</string>
     <string name="app_name">COMP 3520 Final Project</string>
     <string name="untitled">back</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -50,4 +51,16 @@
     <string name="email_placeholder">your.email@example.com</string>
     <string name="password_placeholder">••••••••</string>
     <string name="name_placeholder">John Doe</string>
+
+    <!-- Settings -->
+    <string name="SettingsTitle">Settings</string>
+    <string name="AccountButtonTitle">Account Information</string>
+    <string name="NotificationsButtonTitle">Notifications / Alerts</string>
+    <string name="TransactionHistoryButtonTitle">Transaction History</string>
+    <string name="VehicleManagementButtonTitle">Vehicle Management</string>
+    <string name="PassManagementButtonTitle">Pass Management</string>
+    <string name="LightAndDarkModeButtonTitle">Light / Dark Mode</string>
+    <string name="LanguageButtonTitle">Language</string>
+    <string name="ErrorText">Error</string>
+    <string name="LanguageText">Language: %s</string>
 </resources>

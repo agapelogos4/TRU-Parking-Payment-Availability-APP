@@ -3,5 +3,18 @@
     <style name="Base.Theme.COMP3520FinalProject" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- app background -->
+        <item name="android:windowOptOutEdgeToEdgeEnforcement" tools:targetApi="35">true</item>
+        <item name="android:colorBackground">@color/TRUBlue</item>
+        <item name="android:backgroundTint">@color/TRUDark</item>
+        <item name="colorText">@color/white</item>
+        <item name="colorBackground">@color/TRUDarkGray</item>
+
+        <!-- button colors -->
+        <item name="colorButtonBackground">@color/TRUDarkGray</item>
+        <item name="colorButtonText">@color/white</item>
+
+        <item name="dayPassColor">@color/day_pass_color</item>
+        <item name="multiDayPassColor">@color/multiday_pass_color</item>
     </style>
 </resources>
