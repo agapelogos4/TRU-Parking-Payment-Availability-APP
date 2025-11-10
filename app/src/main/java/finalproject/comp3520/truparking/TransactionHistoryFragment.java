@@ -3,7 +3,7 @@
 // Description: displays a list of all past transactions. Allows individual deletion (via adapter) and deletion of all transactions.
 // Date: [09/08/2025]
 
-package com.tru.truparkingpaymentavailabilityapp;
+package finalproject.comp3520.truparking;
 
 import android.app.AlertDialog;
 import android.os.Bundle;

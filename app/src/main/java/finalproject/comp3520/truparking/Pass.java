@@ -5,7 +5,7 @@
 // Date: [09/08/2025]
 
 
-package com.tru.truparkingpaymentavailabilityapp;
+package finalproject.comp3520.truparking;
 
 import java.util.UUID;
 

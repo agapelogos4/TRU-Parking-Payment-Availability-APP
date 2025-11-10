@@ -4,7 +4,7 @@
 //              This class controls selection of a language and it saves it in SharedPreferences, sets the text via LanguageManager dimisses the bottom sheet, and recreating the activity.
 // Date: [09/07/2025]
 
-package com.tru.truparkingpaymentavailabilityapp;
+package finalproject.comp3520.truparking;
 
 import android.content.Context;
 import android.view.LayoutInflater;

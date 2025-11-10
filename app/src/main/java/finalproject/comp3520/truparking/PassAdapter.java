@@ -4,7 +4,7 @@
 //              expiration date, and lot info with color-coded indicators for day or multi-day passes.
 // Date: [09/08/2025]
 
-package com.tru.truparkingpaymentavailabilityapp;
+package finalproject.comp3520.truparking;
 
 import android.content.Context;
 import android.content.res.ColorStateList;

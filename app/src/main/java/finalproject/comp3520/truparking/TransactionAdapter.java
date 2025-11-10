@@ -3,7 +3,7 @@
 // Description: adapter for displaying a list of transactions in a recyclerview. can delete a item with confirmation dialog.
 // Date: [09/08/2025]
 
-package com.tru.truparkingpaymentavailabilityapp;
+package finalproject.comp3520.truparking;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;

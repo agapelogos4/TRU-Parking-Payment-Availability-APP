@@ -3,7 +3,7 @@
 // Description: Handles the settings screen, including account info, notifications, transactions, vehicles, passes, language, and dark mode toggle.
 // Date: [08/15/2025]
 
-package com.tru.truparkingpaymentavailabilityapp;
+package finalproject.comp3520.truparking;
 
 import android.content.Context;
 import android.content.SharedPreferences;

@@ -4,7 +4,7 @@
 // Date: [09/07/2025]
 
 
-package com.tru.truparkingpaymentavailabilityapp;
+package finalproject.comp3520.truparking;
 
 import android.view.View;
 import android.widget.TextView;

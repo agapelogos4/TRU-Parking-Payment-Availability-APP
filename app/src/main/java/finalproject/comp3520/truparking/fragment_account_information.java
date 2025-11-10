@@ -3,7 +3,7 @@
 // Description: Bottom sheet fragment displays account information in a bottom sheet dialog fragment.
 // Date: [08/18/2025]
 
-package com.tru.truparkingpaymentavailabilityapp;
+package finalproject.comp3520.truparking;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

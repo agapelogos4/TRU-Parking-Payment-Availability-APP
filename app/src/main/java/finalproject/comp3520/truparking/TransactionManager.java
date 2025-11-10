@@ -3,7 +3,7 @@
 // Description: handles storing, retrieving, adding, and deleting transaction objects in sharedpreferences
 // Date: [09/08/2025]
 
-package com.tru.truparkingpaymentavailabilityapp;
+package finalproject.comp3520.truparking;
 
 import android.content.Context;
 import android.content.SharedPreferences;

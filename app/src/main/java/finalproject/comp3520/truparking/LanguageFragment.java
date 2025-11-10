@@ -7,7 +7,7 @@
 //If you want to create a new langauge start in this class and add to the items list see below.
 //then you want to create a new strings file with the new language for each string, and you want to update the LanguageManager class.
 
-package com.tru.truparkingpaymentavailabilityapp;
+package finalproject.comp3520.truparking;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

@@ -3,7 +3,7 @@
 // Description: Class representing a language option in the app.
 // Date: [09/07/2025]
 
-package com.tru.truparkingpaymentavailabilityapp;
+package finalproject.comp3520.truparking;
 
 /*
  * LanguageItem represents a single language this allows the user to select it as a option.

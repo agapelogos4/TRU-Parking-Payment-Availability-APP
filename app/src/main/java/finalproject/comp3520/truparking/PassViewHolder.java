@@ -3,7 +3,7 @@
 // Description: Holds references to the front end for each pass item in the RecyclerView.
 // Date: [09/08/2025]
 
-package com.tru.truparkingpaymentavailabilityapp;
+package finalproject.comp3520.truparking;
 
 import android.view.View;
 import android.widget.ImageButton;

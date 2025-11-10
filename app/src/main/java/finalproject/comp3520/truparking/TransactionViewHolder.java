@@ -3,7 +3,7 @@
 // Description: holds references to the views for a single transaction item in the recyclerview
 // Date: [09/08/2025]
 
-package com.tru.truparkingpaymentavailabilityapp;
+package finalproject.comp3520.truparking;
 
 import android.view.View;
 import android.widget.ImageButton;

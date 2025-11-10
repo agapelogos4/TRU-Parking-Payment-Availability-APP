@@ -3,7 +3,7 @@
 // Description: manages the display and deletion of license plates in the users settings
 // Date: [09/07/2025]
 
-package com.tru.truparkingpaymentavailabilityapp;
+package finalproject.comp3520.truparking;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
