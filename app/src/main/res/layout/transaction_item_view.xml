@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/transactionDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date: 2025-11-07"
+        android:textSize="16sp"
+        android:textColor="?attr/colorText"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/transactionAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount: $20.00"
+        android:textSize="16sp"
+        android:textColor="?attr/colorText"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/transactionDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Duration: 2 hours"
+        android:textSize="16sp"
+        android:textColor="?attr/colorText"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/transactionLot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lot: A"
+        android:textSize="16sp"
+        android:textColor="?attr/colorText"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/licensePlate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="License Plate: ABC-1234"
+        android:textSize="16sp"
+        android:textColor="?attr/colorText"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/cardDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Card Holder: John Doe | Last 4: 1234"
+        android:textSize="16sp"
+        android:textColor="?attr/colorText"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:paddingTop="8dp">
+
+        <ImageButton
+            android:id="@+id/deleteTransactionButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/delete_icon"
+            android:contentDescription="Delete Transaction"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="?attr/colorText"
+            android:layout_marginEnd="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        style="@style/DarkBlueBackground"
+        android:visibility="visible" />
+
+</LinearLayout>
