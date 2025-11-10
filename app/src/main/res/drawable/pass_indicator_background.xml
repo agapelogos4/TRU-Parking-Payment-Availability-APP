@@ -1,0 +1,26 @@
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- light Theme -->
+    <item
+        android:drawable="@color/day_pass_color_light"
+        android:state_enabled="true"
+        android:state_checked="true"
+        tools:ignore="StateListReachable" />
+    <item
+        android:drawable="@color/multiday_pass_color_light"
+        android:state_enabled="true"
+        android:state_checked="false"
+        tools:ignore="StateListReachable" />
+    <!-- dark Theme -->
+    <item
+        android:drawable="@color/day_pass_color"
+        android:state_enabled="true"
+        android:state_checked="true"
+        />
+    <item
+        android:drawable="@color/multiday_pass_color"
+        android:state_enabled="true"
+        android:state_checked="false"
+        />
+    <!-- default background -->
+    <item android:drawable="@android:color/white" />
+</selector>
