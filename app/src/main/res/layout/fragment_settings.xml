@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+
+    tools:context=".Settings">
+
+    <include
+        layout="@layout/top_navbar"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SettingsTitle"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        style="@style/TextColor"
+        android:textSize="50sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="bottom" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/accountInformationButton"
+            style="@style/SettingsTopButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/account_icon"
+            android:text="@string/AccountButtonTitle"
+            android:drawablePadding="25dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginHorizontal="16dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notificationButton"
+            style="@style/SettingsButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/notifications_icon"
+            android:text="@string/NotificationsButtonTitle"
+            android:drawablePadding="25dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginHorizontal="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/transactionHistoryButton"
+            style="@style/SettingsButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/history_icon"
+            android:text="@string/TransactionHistoryButtonTitle"
+            android:drawablePadding="25dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginHorizontal="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/vehicleManagementButton"
+            style="@style/SettingsButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/vehicle_icon"
+            android:text="@string/VehicleManagementButtonTitle"
+            android:drawablePadding="25dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginHorizontal="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/passManagementButton"
+            style="@style/SettingsButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/pass_icon"
+            android:drawablePadding="25dp"
+            android:text="@string/PassManagementButtonTitle"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginHorizontal="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/lightAndDarkModeLayout"
+            style="@style/SettingsButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingEnd="16dp"
+            android:layout_marginHorizontal="16dp"
+            >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/light_dark_icon"
+                android:contentDescription="@string/LightAndDarkModeButtonTitle"
+                android:layout_marginEnd="25dp"
+                />
+
+            <TextView
+                android:id="@+id/lightDarkModeText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/LightAndDarkModeButtonTitle"
+                android:textColor="?attr/colorButtonText"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/lightDarkModeSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:thumbTint="@color/white"
+                app:trackTint="@color/TRUDark"/>
+
+
+        </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/languageButton"
+        style="@style/SettingsButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/language_icon"
+        android:drawablePadding="25dp"
+        android:text="Language: English"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_marginHorizontal="16dp"/>
+
+
+
+</LinearLayout>

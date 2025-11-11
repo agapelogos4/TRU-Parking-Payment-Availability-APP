@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/passColorIndicator"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="16dp" /> <!-- background set in java -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/licensePlateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABC123"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorText"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageButton
+                android:id="@+id/editLicensePlateButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/edit_icon"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Edit License Plate"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/passExpirationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expires: 11/15/2025 5:00 PM"
+            android:textColor="?attr/colorText"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/passLotText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lot: N"
+            android:textColor="?attr/colorText"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -2,8 +2,28 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.COMP3520FinalProject" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/material_dynamic_primary0</item>
+
+        <!-- app background -->
+        <!-- <item name="android:windowOptOutEdgeToEdgeEnforcement" tools:targetApi="35">true</item> -->
+        <item name="android:colorBackground">@color/TRUBlue</item>
+        <item name="colorText">@color/TRUDark</item>
+        <item name="colorBackground">@color/white</item>
+
+        <!-- button colors -->
+        <item name="colorButtonBackground">@color/TRUBlue</item>
+        <item name="colorButtonText">@color/white</item>
+
+        <item name="dayPassColor">@color/day_pass_color_light</item>
+        <item name="multiDayPassColor">@color/multiday_pass_color_light</item>
+
+        <item name="cardBackgroundColor">@null</item>
+        <!-- <item name="editTextBackground">#F5F5F7</item> -->
     </style>
 
-    <style name="Theme.COMP3520FinalProject" parent="Base.Theme.COMP3520FinalProject" />
+    <style name="Theme.COMP3520FinalProject" parent="Base.Theme.COMP3520FinalProject">
+    <item name="android:statusBarColor">#000000</item>
+    </style>
+
+    
 </resources>

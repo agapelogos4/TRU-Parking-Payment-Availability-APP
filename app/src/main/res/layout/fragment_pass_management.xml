@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/currentActivePassTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Active Pass"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorText"
+        android:paddingBottom="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/passLegendLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:gravity="start|center_vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="24dp">
+
+            <LinearLayout
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                style="@style/DayPassIndicator"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day Pass"
+                android:textColor="?attr/colorText"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                style="@style/MultiPassIndicator"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Multi-Day Pass"
+                android:textColor="?attr/colorText"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noPassesMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No active passes"
+        android:textColor="?attr/colorText"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingBottom="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/passesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:visibility="visible"/>
+</LinearLayout>

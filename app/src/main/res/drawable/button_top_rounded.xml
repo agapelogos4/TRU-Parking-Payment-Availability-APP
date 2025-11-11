@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- this is only for the top button found in the settings so the top coners are rounded -->
+
+    <!-- base background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/colorButtonBackground" />
+
+            <corners
+                android:topLeftRadius="12dp"
+                android:topRightRadius="12dp"
+                android:bottomLeftRadius="0dp"
+                android:bottomRightRadius="0dp" />
+        </shape>
+    </item>
+
+    <!-- bottom-only line -->
+    <item android:gravity="bottom">
+        <shape android:shape="rectangle">
+            <size android:height="2dp" />
+            <solid android:color="#DDDDDD" />
+        </shape>
+    </item>
+
+</layer-list>

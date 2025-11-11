@@ -8,6 +8,8 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -17,13 +19,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button lotNButton = findViewById(R.id.LotNButton);
-        ImageButton loginButton = findViewById(R.id.loginButton);
+        ImageButton loginButton = findViewById(R.id.loginLogoutButton);
+
+
+        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.top_toolbar);
+        setSupportActionBar(toolbar);
+        Objects.requireNonNull(getSupportActionBar()).setTitle("");
 
         lotNButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ParkingPaymentActivity.class);
+                Intent intent = new Intent (MainActivity.this, PaymentScreen.class);
                 startActivity(intent);
+                /*PassSelectionBottomSheet sheet = new PassSelectionBottomSheet();
+                sheet.show(getSupportFragmentManager(), "PassSelectionBottomSheet");*/
             }
         });
 

@@ -76,10 +76,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
                 android:background="@drawable/tab_background"
-                app:tabIndicatorColor="@color/indigo_600"
+                app:tabIndicatorColor="#00b0b9"
                 app:tabIndicatorFullWidth="true"
                 app:tabMode="fixed"
-                app:tabSelectedTextColor="@color/indigo_600"
+                app:tabSelectedTextColor="#00b0b9"
                 app:tabTextColor="@color/text_secondary">
 
                 <com.google.android.material.tabs.TabItem
@@ -112,6 +112,19 @@
         android:backgroundTint="@color/white"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/continueAsGuestButton"
+        android:layout_width="112dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        android:text="Continue As Guest"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

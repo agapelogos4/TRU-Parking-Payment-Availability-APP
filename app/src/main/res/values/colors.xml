@@ -2,6 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="darkmodeGrey">#141414</color>
+    <color name="TRUCloud">#fff5de</color>     <!-- light background -->
+    <color name="TRUDark">#121212</color>      <!-- dark mode background -->
+    <color name="TRUDarkGray">#2C2C2C</color>  <!-- dark button background -->
+    <color name="TRUBlue">#003e51</color>
+
+    <color name="day_pass_color">#FFB74D</color>         <!-- orange -->
+    <color name="day_pass_color_light">#FFE0B2</color>   <!-- light Orange -->
+    <color name="multiday_pass_color">#4DB6AC</color>    <!-- teal -->
+    <color name="multiday_pass_color_light">#B2DFDB</color> <!-- light teal -->
 
     <!-- Primary Colors -->
     <color name="indigo_500">#6366F1</color>

@@ -1,9 +1,48 @@
 <resources>
+    <string name="old_app_name">TRU Parking Payment &amp; Availability APP</string>
     <string name="app_name">COMP 3520 Final Project</string>
     <string name="untitled">back</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string-array name="Hour_Choices_Array">
+        <item>30 min</item>
+        <item>60 min</item>
+        <item>90 min</item>
+        <item>120 min</item>
+    </string-array>
+
+    <string-array name="License_Plate_Choices_Array">
+        <item>JP9 63T</item>
+        <item>XP3 25E</item>
+        <item>KJ8 91L</item>
+        <item>MD4 31F</item>
+    </string-array>
+
+    <string-array name="expiry_month_choices_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <!-- TEMPORARY FOR OBV REASONS -->
+    <string-array name="expiry_year_choices_array">
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+
+    </string-array>
 
     <!-- Header -->
     <string name="welcome">Welcome</string>
@@ -37,6 +76,18 @@
     <string name="email_placeholder">your.email@example.com</string>
     <string name="password_placeholder">••••••••</string>
     <string name="name_placeholder">John Doe</string>
+
+    <!-- Settings -->
+    <string name="SettingsTitle">Settings</string>
+    <string name="AccountButtonTitle">Account Information</string>
+    <string name="NotificationsButtonTitle">Notifications / Alerts</string>
+    <string name="TransactionHistoryButtonTitle">Transaction History</string>
+    <string name="VehicleManagementButtonTitle">Vehicle Management</string>
+    <string name="PassManagementButtonTitle">Pass Management</string>
+    <string name="LightAndDarkModeButtonTitle">Light / Dark Mode</string>
+    <string name="LanguageButtonTitle">Language</string>
+    <string name="ErrorText">Error</string>
+    <string name="LanguageText">Language: %s</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="map_descrition">TRU Parking Map</string>
 </resources>

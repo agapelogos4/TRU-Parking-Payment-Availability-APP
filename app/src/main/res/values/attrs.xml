@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorButtonBackground" format="color" />
+    <attr name="colorButtonText" format="color" />
+    <attr name="colorText" format="color" />
+    <attr name="colorBackground" format="color" />
+
+    <!-- pass Colors -->
+    <attr name="dayPassColor" format="color" />
+    <attr name="multiDayPassColor" format="color" />
+
+    <attr name="cardBackgroundColor" format="color"/>
+    <!-- <attr name="editTextBackground" format="color"/> -->
+</resources>

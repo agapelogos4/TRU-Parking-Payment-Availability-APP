@@ -44,6 +44,7 @@ dependencies {
     implementation(libs.play.services.maps)
     implementation(libs.fragment)
     implementation(libs.google.android.maps.utils)
+    implementation("com.google.android.material:material:1.12.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

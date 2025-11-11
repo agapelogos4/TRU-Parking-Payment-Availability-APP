@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/licenseHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your License Plates"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorText"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/noLicenseText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="There are no stored license plates currently."
+            android:textSize="16sp"
+            android:textColor="?attr/colorText"
+            android:gravity="center"
+            android:padding="12dp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/licenseRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/licenseText1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ABC-1234"
+                android:textSize="16sp"
+                android:textColor="?attr/colorText"/>
+
+            <ImageButton
+                android:id="@+id/editButton1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/edit_icon"
+                android:contentDescription="Edit"
+                android:padding="12dp"
+                app:tint="?attr/colorText"/>
+
+            <ImageButton
+                android:id="@+id/deleteButton1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/delete_icon"
+                android:contentDescription="Delete"
+                android:padding="12dp"
+                app:tint="?attr/colorText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Separator1"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            style="@style/DarkBlueBackground"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/licenseRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/licenseText2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DEF-5678"
+                android:textSize="16sp"
+                android:textColor="?attr/colorText"/>
+
+            <ImageButton
+                android:id="@+id/editButton2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/edit_icon"
+                android:contentDescription="Edit"
+                android:padding="12dp"
+                app:tint="?attr/colorText"/>
+
+            <ImageButton
+                android:id="@+id/deleteButton2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/delete_icon"
+                android:contentDescription="Delete"
+                android:padding="12dp"
+                app:tint="?attr/colorText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Separator2"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            style="@style/DarkBlueBackground"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/licenseRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/licenseText3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="GHI-9012"
+                android:textSize="16sp"
+                android:textColor="?attr/colorText"/>
+
+            <ImageButton
+                android:id="@+id/editButton3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/edit_icon"
+                android:contentDescription="Edit"
+                android:padding="12dp"
+                app:tint="?attr/colorText"/>
+
+            <ImageButton
+                android:id="@+id/deleteButton3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/delete_icon"
+                android:contentDescription="Delete"
+                android:padding="12dp"
+                app:tint="?attr/colorText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Separator3"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            style="@style/DarkBlueBackground"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/licenseRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/licenseText4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="JKL-3456"
+                android:textSize="16sp"
+                android:textColor="?attr/colorText"/>
+
+            <ImageButton
+                android:id="@+id/editButton4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/edit_icon"
+                android:contentDescription="Edit"
+                android:padding="12dp"
+                app:tint="?attr/colorText"/>
+
+            <ImageButton
+                android:id="@+id/deleteButton4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/delete_icon"
+                android:contentDescription="Delete"
+                android:padding="12dp"
+                app:tint="?attr/colorText"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
