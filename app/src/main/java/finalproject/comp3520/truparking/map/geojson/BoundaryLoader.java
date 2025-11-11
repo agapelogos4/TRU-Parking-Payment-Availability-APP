@@ -1,17 +1,4 @@
-package finalproject.comp3520.truparking.data.geojson;
-
-import android.content.Context;
-import android.util.Log;
-
-import com.google.android.gms.maps.GoogleMap;
-import com.google.maps.android.data.geojson.GeoJsonLayer;
-
-import org.json.JSONException;
-
-import java.io.IOException;
-
-import finalproject.comp3520.truparking.R;
-import finalproject.comp3520.truparking.utils.ReflectionUtil;
+package finalproject.comp3520.truparking.map.geojson;
 
 public class BoundaryLoader {
 

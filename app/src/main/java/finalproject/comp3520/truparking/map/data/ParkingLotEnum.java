@@ -1,4 +1,4 @@
-package finalproject.comp3520.truparking.map;
+package finalproject.comp3520.truparking.map.data;
 
 public enum ParkingLotEnum {
     A1(new ParkingLot("A1", 10, ParkingLot.LotType.VISITOR, true)),

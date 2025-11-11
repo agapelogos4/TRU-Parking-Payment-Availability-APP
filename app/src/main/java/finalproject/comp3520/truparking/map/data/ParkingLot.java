@@ -1,4 +1,4 @@
-package finalproject.comp3520.truparking.map;
+package finalproject.comp3520.truparking.map.data;
 
 import java.util.ArrayList;
 import java.util.List;

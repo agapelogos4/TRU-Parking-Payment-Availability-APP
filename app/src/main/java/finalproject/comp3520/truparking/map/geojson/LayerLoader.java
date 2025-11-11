@@ -1,4 +1,4 @@
-package finalproject.comp3520.truparking.data.geojson;
+package finalproject.comp3520.truparking.map.geojson;
 
 import android.content.Context;
 import android.util.Log;
@@ -13,26 +13,26 @@ import com.google.maps.android.data.geojson.GeoJsonPolygonStyle;
 import java.util.HashMap;
 
 import finalproject.comp3520.truparking.R;
-import finalproject.comp3520.truparking.data.ParkingLot;
+import finalproject.comp3520.truparking.map.data.ParkingLot;
 import finalproject.comp3520.truparking.utils.ReflectionUtil;
 
-public class LayerManager {
+public class LayerLoader {
 
-    private static final String TAG = "LayerManager";
+    private static final String TAG = "LayerLoader";
     private final GoogleMap map;
     private final Context context;
 
     HashMap<String, GeoJsonLayer> layers = new HashMap<>();
 
 
-    public LayerManager(GoogleMap googleMap, Context context) {
+    public LayerLoader(GoogleMap googleMap, Context context) {
         this.map = googleMap;
         this.context = context;
     }
 
     public void loadLayer(ParkingLot lot) {
         String name = lot.getName().toLowerCase();
-        int jsonFile = -1;
+        int jsonFile;
         try {
             jsonFile = ReflectionUtil.getResourceIdFromString(name, R.raw.class);
         } catch (Exception e) {

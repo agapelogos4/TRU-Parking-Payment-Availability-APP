@@ -26,4 +26,10 @@
     <color name="gradient_start">#6366F1</color>
     <color name="gradient_middle">#A855F7</color>
     <color name="gradient_end">#EC4899</color>
+
+    <color name="economy_lot">#44CC44</color>
+    <color name="general_lot">#8F9EFF</color>
+    <color name="visitor_lot">#3200A8</color>
+    <color name="premium_lot">#7E002C</color>
+    <color name="reserved_lot">#D56A00</color>
 </resources>

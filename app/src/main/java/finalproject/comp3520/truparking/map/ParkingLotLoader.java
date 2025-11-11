@@ -1,14 +1,19 @@
-package finalproject.comp3520.truparking.data;
+package finalproject.comp3520.truparking.map;
 
 import java.util.HashMap;
 
-public class ParkingLotManager {
+import finalproject.comp3520.truparking.map.data.ParkingLot;
+import finalproject.comp3520.truparking.map.data.ParkingLotEnum;
+
+public class ParkingLotLoader {
      private final HashMap<String, ParkingLot> parkingLotMap = new HashMap<>();
-    public ParkingLotManager() {
+    public ParkingLotLoader() {
         for(ParkingLotEnum parkingLotEnum : ParkingLotEnum.values()) {
             ParkingLot parkingLot = parkingLotEnum.getParkingLot();
            parkingLotMap.put(parkingLot.getName(), parkingLot);
         }
+
+        // Attempt to load from webserver
     }
 
     public  ParkingLot getParkingLot(String name) {
