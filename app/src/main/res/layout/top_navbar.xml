@@ -17,6 +17,16 @@
         />
 
 
+    <ImageButton
+        android:id="@+id/loginLogoutButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/baseline_login_24"
+        android:background="@null"
+        app:tint="@color/white"
+        android:layout_gravity="end"
+
+        />
 
 
     <ImageButton
@@ -51,6 +61,8 @@
         android:layout_gravity="end"
 
         />
+
+
 
 
 
