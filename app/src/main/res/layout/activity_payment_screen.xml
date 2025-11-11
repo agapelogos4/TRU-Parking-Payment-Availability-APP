@@ -5,15 +5,19 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="?attr/colorBackground"
     tools:context=".PaymentScreen">
+
+    <include
+        layout="@layout/top_navbar"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="397dp"
         android:layout_height="143dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="78dp"
         android:background="@drawable/bg_selected_space_rounded"
+        android:backgroundTint="?attr/cardBackgroundColor"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -31,28 +35,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Confirm Your Selection"
-                android:textSize="20dp" />
+                android:textSize="20sp"
+                />
 
             <TextView
                 android:id="@+id/parkingLotText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Parking Lot:" />
+                android:text="Parking Lot:"
+                />
 
             <TextView
                 android:id="@+id/durationText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Duration:" />
+                android:text="Duration:"
+                />
 
             <TextView
                 android:id="@+id/licensePlateText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="License Plate: " />
+                android:text="License Plate: "
+                />
 
 
 
@@ -103,6 +111,7 @@
         android:layout_marginTop="28dp"
         android:orientation="vertical"
         android:background="@drawable/bg_selected_space_rounded"
+        android:backgroundTint="?attr/cardBackgroundColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
@@ -112,7 +121,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/baseline_credit_card_24"
-            android:text="Payment Information"
+            android:text=" Payment Information"
             android:textSize="19dp" />
 
         <TextView
@@ -134,6 +143,7 @@
             android:paddingStart="8dp"
             android:inputType="textEmailAddress"
             android:background="@drawable/rounded_edittext_bg"/>
+            <!-- android:backgroundTint="?attr/editTextBackground"/> -->
 
         <TextView
             android:id="@+id/cardNumberHeader"
@@ -142,7 +152,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginStart="5dp"
             android:text="Card Number"
-            android:textSize="17dp" />
+            android:textSize="17dp"
+            />
 
         <EditText
             android:id="@+id/cardNumberInputField"
@@ -154,6 +165,7 @@
             android:paddingStart="8dp"
             android:inputType="number"
             android:background="@drawable/rounded_edittext_bg"/>
+        <!-- android:backgroundTint="?attr/editTextBackground"/> -->
 
         <TextView
             android:id="@+id/cardholderNameHeader"
@@ -174,6 +186,7 @@
             android:paddingStart="8dp"
             android:inputType="number"
             android:background="@drawable/rounded_edittext_bg"/>
+        <!-- android:backgroundTint="?attr/editTextBackground"/> -->
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -187,7 +200,8 @@
                 android:text="Expiry Month"
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="2dp"
-                android:textSize="15dp"/>
+                android:textSize="15dp"
+                />
 
             <TextView
                 android:id="@+id/ExpiryYearHeader"
@@ -214,53 +228,118 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <EditText
+            <Spinner
+                android:id="@+id/expiryMonthSpinner"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_edittext_bg"
                 android:layout_marginTop="5dp"/>
+            <!-- android:backgroundTint="?attr/editTextBackground"/> -->
 
-            <EditText
+
+            <Spinner
+                android:id="@+id/expiryYearSpinner"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_edittext_bg"
                 android:layout_marginTop="5dp"
                 android:layout_marginStart="25dp"/>
+            <!-- android:backgroundTint="?attr/editTextBackground"/> -->
+
 
             <EditText
+                android:id="@+id/CVVInputField"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_edittext_bg"
                 android:layout_marginTop="5dp"
-                android:layout_marginStart="25dp"/>
+                android:layout_marginStart="25dp"
+                android:maxEms="3"
+                android:inputType="number"/>
+            <!-- android:backgroundTint="?attr/editTextBackground"/> -->
+
         </LinearLayout>
 
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Remember this payment method"
+            android:layout_marginTop="10dp"/>
         <View
             android:id="@+id/divider"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="?android:attr/listDivider"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="0dp"/>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Total Amount"
-                android:layout_marginTop="15dp"/>
+                android:orientation="horizontal">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pass Price"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/preTaxTotalTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="260dp"
+                    android:textSize="15sp"
+                    android:text="$5.40"
+                    android:layout_marginTop="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="230dp"
-                android:textSize="20dp"
-                android:text="$5.40"
-                android:layout_marginTop="15dp"/>
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taxes"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/taxAmountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="290dp"
+                    android:textSize="15sp"
+                    android:text="$5.40"
+                    android:layout_marginTop="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/totalAmountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="270dp"
+                    android:textSize="20sp"
+                    android:text="$5.40"
+                    android:layout_marginTop="15dp"/>
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -275,7 +354,7 @@
             app:iconTint="@android:color/white"
             app:iconPadding="8dp"
             app:iconGravity="textStart"
-            app:backgroundTint="#000000"
+            app:backgroundTint="#003E51"
             app:cornerRadius="12dp" />
 
         <LinearLayout

@@ -2,6 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="darkmodeGrey">#141414</color>
     <color name="TRUCloud">#fff5de</color>     <!-- light background -->
     <color name="TRUDark">#121212</color>      <!-- dark mode background -->
     <color name="TRUDarkGray">#2C2C2C</color>  <!-- dark button background -->

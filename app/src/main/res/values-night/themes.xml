@@ -6,9 +6,9 @@
         <!-- app background -->
         <!-- <item name="android:windowOptOutEdgeToEdgeEnforcement" tools:targetApi="35">true</item> -->
         <item name="android:colorBackground">@color/TRUBlue</item>
-        <item name="android:backgroundTint">@color/TRUDark</item>
+
         <item name="colorText">@color/white</item>
-        <item name="colorBackground">@color/TRUDarkGray</item>
+        <item name="colorBackground">@color/black</item>
 
         <!-- button colors -->
         <item name="colorButtonBackground">@color/TRUDarkGray</item>
@@ -16,5 +16,8 @@
 
         <item name="dayPassColor">@color/day_pass_color</item>
         <item name="multiDayPassColor">@color/multiday_pass_color</item>
+
+        <item name="cardBackgroundColor">@color/darkmodeGrey</item>
+        <!-- <item name="editTextBackground">#F5F5F7</item> -->
     </style>
 </resources>

@@ -1,15 +1,20 @@
 package finalproject.comp3520.truparking;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MotionEvent;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.NumberPicker;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +24,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Objects;
 
 public class PaymentScreen extends AppCompatActivity
 {
@@ -28,13 +34,37 @@ public class PaymentScreen extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
+        //EdgeToEdge.enable(this);
         setContentView(R.layout.activity_payment_screen);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        EditText emailField = findViewById(R.id.emailAddressInputField);
+        EditText cardNumberField = findViewById(R.id.cardNumberInputField);
+        EditText cardholderNameField = findViewById(R.id.cardholderNameInputField);
+        Spinner expiryMonthSpinner = findViewById(R.id.expiryMonthSpinner);
+        Spinner expiryYearSpinner = findViewById(R.id.expiryYearSpinner);
+        EditText cvvField = findViewById(R.id.CVVInputField);
+
+
+
+        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.top_toolbar);
+        setSupportActionBar(toolbar);
+        Objects.requireNonNull(getSupportActionBar()).setTitle("");
+
+        ImageButton settingsCog = findViewById(R.id.settingsCog);
+
+        settingsCog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PaymentScreen.this, SettingsActivityTest.class);
+                startActivity(intent);
+            }
+        });
+
 
 
 
