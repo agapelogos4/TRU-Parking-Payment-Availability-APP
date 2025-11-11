@@ -6,10 +6,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#F5F5F5"
-    android:paddingTop="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
+
     tools:context=".Settings">
+
+    <include
+        layout="@layout/top_navbar"
+        />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -41,7 +43,9 @@
             android:text="@string/AccountButtonTitle"
             android:drawablePadding="25dp"
             android:paddingTop="16dp"
-            android:paddingBottom="16dp"/>
+            android:paddingBottom="16dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginHorizontal="16dp"/>
 
 
         <androidx.appcompat.widget.AppCompatButton
@@ -53,7 +57,8 @@
             android:text="@string/NotificationsButtonTitle"
             android:drawablePadding="25dp"
             android:paddingTop="16dp"
-            android:paddingBottom="16dp"/>
+            android:paddingBottom="16dp"
+            android:layout_marginHorizontal="16dp"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/transactionHistoryButton"
@@ -64,7 +69,8 @@
             android:text="@string/TransactionHistoryButtonTitle"
             android:drawablePadding="25dp"
             android:paddingTop="16dp"
-            android:paddingBottom="16dp"/>
+            android:paddingBottom="16dp"
+            android:layout_marginHorizontal="16dp"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/vehicleManagementButton"
@@ -75,7 +81,8 @@
             android:text="@string/VehicleManagementButtonTitle"
             android:drawablePadding="25dp"
             android:paddingTop="16dp"
-            android:paddingBottom="16dp"/>
+            android:paddingBottom="16dp"
+            android:layout_marginHorizontal="16dp"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/passManagementButton"
@@ -86,7 +93,8 @@
             android:drawablePadding="25dp"
             android:text="@string/PassManagementButtonTitle"
             android:paddingTop="16dp"
-            android:paddingBottom="16dp"/>
+            android:paddingBottom="16dp"
+            android:layout_marginHorizontal="16dp"/>
 
         <LinearLayout
             android:id="@+id/lightAndDarkModeLayout"
@@ -96,6 +104,7 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:paddingEnd="16dp"
+            android:layout_marginHorizontal="16dp"
             >
 
             <ImageView
@@ -103,7 +112,8 @@
                 android:layout_height="24dp"
                 android:src="@drawable/light_dark_icon"
                 android:contentDescription="@string/LightAndDarkModeButtonTitle"
-                android:layout_marginEnd="25dp" />
+                android:layout_marginEnd="25dp"
+                />
 
             <TextView
                 android:id="@+id/lightDarkModeText"
@@ -135,13 +145,9 @@
         android:drawablePadding="25dp"
         android:text="Language: English"
         android:paddingTop="16dp"
-        android:paddingBottom="16dp"/>
+        android:paddingBottom="16dp"
+        android:layout_marginHorizontal="16dp"/>
 
-    <LinearLayout
-        style="@style/DarkBlueBackground"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical" />
+
 
 </LinearLayout>

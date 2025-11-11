@@ -8,6 +8,8 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -18,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
 
         Button lotNButton = findViewById(R.id.LotNButton);
         ImageButton loginButton = findViewById(R.id.loginButton);
+
+
+        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.top_toolbar);
+        setSupportActionBar(toolbar);
+        Objects.requireNonNull(getSupportActionBar()).setTitle("");
 
         lotNButton.setOnClickListener(new View.OnClickListener() {
             @Override

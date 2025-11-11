@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     android:background="#FFF">
 
+    <include
+        layout="@layout/top_navbar"/>
+
 
     <Button
         android:id="@+id/button5"
