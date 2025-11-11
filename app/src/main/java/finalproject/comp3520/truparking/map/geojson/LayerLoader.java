@@ -7,6 +7,8 @@ import androidx.core.content.ContextCompat;
 import androidx.core.graphics.ColorUtils;
 
 import com.google.android.gms.maps.GoogleMap;
+import com.google.maps.android.data.Feature;
+import com.google.maps.android.data.Layer;
 import com.google.maps.android.data.geojson.GeoJsonLayer;
 import com.google.maps.android.data.geojson.GeoJsonPolygonStyle;
 
@@ -50,6 +52,9 @@ public class LayerLoader {
 
             polygonStyle.setFillColor(fillColour);
             polygonStyle.setStrokeColor(colour);
+            layer.setOnFeatureClickListener(feature -> {
+
+            });
 
             layers.put(name, layer);
         } catch (Exception e) {
