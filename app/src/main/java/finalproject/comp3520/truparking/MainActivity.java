@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button lotNButton = findViewById(R.id.LotNButton);
         ImageButton loginButton = findViewById(R.id.loginLogoutButton);
+        Button mapButton = findViewById(R.id.map_button);
 
 
         androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.top_toolbar);
@@ -40,6 +41,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent (MainActivity.this, LoginSignUpScreen.class);
+                startActivity(intent);
+            }
+        });
+
+        mapButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MapActivity.class);
                 startActivity(intent);
             }
         });

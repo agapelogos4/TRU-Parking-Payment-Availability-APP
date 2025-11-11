@@ -56,7 +56,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
 
         // Zoom in on TRU and add overlay
         LatLng truTopLeft = new LatLng(50.677, -120.371);
-        LatLng truBottomRight = new LatLng(50.668, -120.359);
         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(truTopLeft, 17.0f));
 
         mapManager = new MapManager(googleMap, context);
