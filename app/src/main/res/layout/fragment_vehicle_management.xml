@@ -20,6 +20,16 @@
             android:textColor="?attr/colorText"
             android:paddingBottom="8dp"/>
 
+        <ImageButton
+            android:id="@+id/addPlateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/add_icon"
+            android:contentDescription="Add License Plate"
+            android:padding="8dp"
+            android:visibility="gone" />
+
         <TextView
             android:id="@+id/noLicenseText"
             android:layout_width="match_parent"
@@ -45,7 +55,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="ABC-1234"
+                android:text="@string/ErrorText"
                 android:textSize="16sp"
                 android:textColor="?attr/colorText"/>
 
@@ -92,7 +102,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="DEF-5678"
+                android:text="@string/ErrorText"
                 android:textSize="16sp"
                 android:textColor="?attr/colorText"/>
 
@@ -139,7 +149,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="GHI-9012"
+                android:text="@string/ErrorText"
                 android:textSize="16sp"
                 android:textColor="?attr/colorText"/>
 
@@ -186,7 +196,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="JKL-3456"
+                android:text="@string/ErrorText"
                 android:textSize="16sp"
                 android:textColor="?attr/colorText"/>
 

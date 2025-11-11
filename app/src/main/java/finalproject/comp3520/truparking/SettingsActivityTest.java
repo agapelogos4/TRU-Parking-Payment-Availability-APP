@@ -13,9 +13,11 @@ public class SettingsActivityTest extends AppCompatActivity {
         SharedPreferences preferences = getSharedPreferences("parking_preferences", MODE_PRIVATE);
         boolean isDarkMode = preferences.getBoolean("dark_mode", false);
 
-        if (isDarkMode) {
+        if (isDarkMode)
+        {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-        } else {
+        } else
+        {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         }
 
@@ -24,6 +26,7 @@ public class SettingsActivityTest extends AppCompatActivity {
 
         addTestTransactions();
         addTestPass();
+        addTestLicensePlates();
 
         //show the Settings fragment when the app starts
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Settings()).commit();
@@ -57,5 +60,12 @@ public class SettingsActivityTest extends AppCompatActivity {
 
         passManager.addPass(pass1);
         passManager.addPass(pass2);
+    }
+
+    private void addTestLicensePlates()
+    {
+        LicensePlateManager plateManager = new LicensePlateManager(this);
+
+        plateManager.addPlate("ABC123");
     }
 }
